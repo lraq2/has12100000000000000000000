@@ -1,10 +1,9 @@
-import os
 import sqlite3
 import requests
 from telebot import TeleBot, types
 
-# توكن البوت (تأكد من إضافته كمتغير بيئة إذا كنت تستخدم خدمات مثل Vercel)
-TOKEN = os.getenv("7818149231:AAE7myiU3_omboOmq2YDlQBd5x0luMiSXO0")  # ضع التوكن الخاص بك هنا إذا كنت تعمل محليًا
+# توكن البوت
+TOKEN = "7818149231:AAE7myiU3_omboOmq2YDlQBd5x0luMiSXO0"  # التوكن الخاص بك
 CHANNEL_LINK = "https://t.me/d_tt3"  # رابط القناة
 bot = TeleBot(TOKEN)
 
@@ -37,7 +36,7 @@ def update_user_data(user_id, column):
     conn.commit()
     conn.close()
 
-# استرجاع ترتيب الجترافي
+# استرجاع ترتيب المستخدمين
 def get_ranking(column):
     conn = sqlite3.connect("bot_data.db")
     cursor = conn.cursor()
@@ -118,7 +117,8 @@ def show_ranking(message):
     ranking = get_ranking("visit_count")
     text = "🏆 ترتيب الجترافي:\n\n"
     for i, (username, score) in enumerate(ranking, 1):
-        text += f"{i}. @{username} - {score} زيارة\n"
+        text += f"{i}.
+        @{username} - {score} زيارة\n"
     bot.send_message(message.chat.id, text)
 
 # شرح طريقة البوت
