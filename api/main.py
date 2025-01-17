@@ -5,7 +5,7 @@ from flask import Flask, request
 from telebot import TeleBot, types
 
 # توكن البوت
-TOKEN = "7818149231:AAE7myiU3_omboOmq2YDlQBd5x0luMiSXO0"
+TOKEN = "7818149231:AAHamruU30ztSut_8znl-jy4HeNMgNI3r1w"
 CHANNEL_LINK = "https://t.me/d_tt3"  # رابط القناة
 bot = TeleBot(TOKEN)
 
