@@ -4,9 +4,9 @@ import requests
 from telebot import TeleBot, types
 
 # توكن البوت (تأكد من إضافته كمتغير بيئة إذا كنت تستخدم خدمات مثل Vercel)
-TOKEN = os.getenv("TOKEN")  # ضع التوكن الخاص بك هنا إذا كنت تعمل محليًا
+TOKEN = os.getenv("7818149231:AAE7myiU3_omboOmq2YDlQBd5x0luMiSXO0")  # ضع التوكن الخاص بك هنا إذا كنت تعمل محليًا
 CHANNEL_LINK = "https://t.me/d_tt3"  # رابط القناة
-bot = TeleBot(TOKEN)
+bot = TeleBot(7818149231:AAE7myiU3_omboOmq2YDlQBd5x0luMiSXO0)
 
 # إعداد قاعدة البيانات
 def setup_database():
